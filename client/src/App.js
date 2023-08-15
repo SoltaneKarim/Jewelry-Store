@@ -3,6 +3,7 @@ import NavBar from './components/NavBar.jsx';
 import BestPrice from './components/BestPrice.jsx';
 import About from './components/About.jsx';
 import Price from './components/Price.jsx';
+import Ring from './components/Ring.jsx';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <BestPrice />
     <About />
     <Price />
-    
+    <Ring />
     </div>
   );
 }
