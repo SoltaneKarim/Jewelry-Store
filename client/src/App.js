@@ -4,7 +4,8 @@ import BestPrice from './components/BestPrice.jsx';
 import About from './components/About.jsx';
 import Price from './components/Price.jsx';
 import Ring from './components/Ring.jsx';
-
+import Contact from './components/Contact.jsx';
+import Info from './components/Info.jsx';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
     <About />
     <Price />
     <Ring />
+    <Contact />
+    <Info />
     </div>
   );
 }
