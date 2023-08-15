@@ -2,24 +2,24 @@ import React from 'react'
 
 const Price = () => {
   return (
-    <section class="price_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
+    <section className="price_section layout_padding">
+    <div className="container">
+      <div className="heading_container">
         <h2>
           Our Jewellery Price
         </h2>
       </div>
-      <div class="price_container">
-        <div class="box">
-          <div class="name">
+      <div className="price_container">
+        <div className="box">
+          <div className="name">
             <h6>
               Diamond Ring
             </h6>
           </div>
-          <div class="img-box">
+          <div className="img-box">
             <img src="images/p-1.png" alt="" />
           </div>
-          <div class="detail-box">
+          <div className="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
@@ -28,16 +28,16 @@ const Price = () => {
             </a>
           </div>
         </div>
-        <div class="box">
-          <div class="name">
+        <div className="box">
+          <div className="name">
             <h6>
               Diamond Ring
             </h6>
           </div>
-          <div class="img-box">
+          <div className="img-box">
             <img src="images/i-2.png" alt="" />
           </div>
-          <div class="detail-box">
+          <div className="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
@@ -46,16 +46,16 @@ const Price = () => {
             </a>
           </div>
         </div>
-        <div class="box">
-          <div class="name">
+        <div className="box">
+          <div className="name">
             <h6>
               Diamond Ring
             </h6>
           </div>
-          <div class="img-box">
+          <div className="img-box">
             <img src="images/i-3.png" alt="" />
           </div>
-          <div class="detail-box">
+          <div className="detail-box">
             <h5>
               $<span>1000.00</span>
             </h5>
@@ -65,8 +65,8 @@ const Price = () => {
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <a href="" class="price_btn">
+      <div className="d-flex justify-content-center">
+        <a href="" className="price_btn">
           See More
         </a>
       </div>
