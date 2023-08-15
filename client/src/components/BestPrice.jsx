@@ -16,7 +16,7 @@ const BestPrice = () => {
           </div>
           <div className="name">
             <h5>
-              Bracelet
+              Bracelets
             </h5>
           </div>
         </div>
@@ -31,7 +31,7 @@ const BestPrice = () => {
           </div>
           <div className="name">
             <h5>
-              Ring
+              Rings
             </h5>
           </div>
         </div>

@@ -103,8 +103,7 @@ const NavBar = () => {
                     Jewelry
                     </h1>
                     <p>
-                      Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
-                      aptent taciti sociosqu ad litora torquent per conubia nostra
+                    Elevate Your Style with JEWELRY-STORE. Immerse yourself in a world of exquisite beauty and unparalleled craftsmanship. Explore our curated selection of stunning jewelry, each piece a testament to elegance and artistry. Redefine your allure with every shimmering detail.
                     </p>
                     <div>
                       <a href="">Shop Now</a>

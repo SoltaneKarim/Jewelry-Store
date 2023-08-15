@@ -31,7 +31,7 @@ const Info = () => {
               <a href="">
                 <img src="images/phone.png" alt="" />
                 <span>
-                  +01 1234567890
+                  +216 51172000
                 </span>
               </a>
             </div>
@@ -41,7 +41,7 @@ const Info = () => {
               <a href="">
                 <img src="images/mail.png" alt="" />
                 <span>
-                  demo@gmail.com
+                  soltanekarim92@gmail.com
                 </span>
               </a>
             </div>
@@ -50,7 +50,7 @@ const Info = () => {
         <div className="info_form">
           <div className="d-flex justify-content-center">
             <h5 className="info_heading">
-              Newsletter
+              News letter
             </h5>
           </div>
           <form action="">

@@ -16,10 +16,7 @@ const About = () => {
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud
+            Discover timeless elegance at JEWELRY-STORE. Our handpicked collection captures the essence of sophistication and craftsmanship. From stunning classics to modern marvels, we're here to adorn your moments with brilliance.
             </p>
             <div>
               <a href="">
