@@ -32,7 +32,7 @@ const NavBar = () => {
                   <a className="nav-link" href="about.html"> About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="jewellery.html">Jewellery </a>
+                  <a className="nav-link" href="jewellery.html">jewelry </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="contact.html">Contact us</a>
@@ -74,8 +74,6 @@ const NavBar = () => {
             w <br/>
             e <br/>
             l <br/>
-            l <br/>
-            e <br/>
             r <br/>
             y
           </span>
@@ -102,7 +100,7 @@ const NavBar = () => {
                       <hr/>
                     </h2>
                     <h1>
-                      Jewellery
+                    Jewelry
                     </h1>
                     <p>
                       Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felislacinia
