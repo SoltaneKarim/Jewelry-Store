@@ -10,7 +10,7 @@ const PriceDetails = (props) => {
     }
 
   return (
-    <div>
+    <div className='tsawer'>
         <p>{props.data.title}</p>
         <p>{props.data.description}</p>
         <img src={props.data.image} alt={props.data.image}/>
