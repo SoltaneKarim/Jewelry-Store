@@ -45,12 +45,13 @@ const updateBracelet = (req,res) => {
 }
 
 const deleteBracelet = (req,res) => {
+    console.log(req.params)
     const query = 'DELETE FROM bracelet WHERE id=?'
     const braceletId = req.params.id
     connection.query(query,[braceletId], (err,results) => {
         if (err) {
-            console.log('error getting bracelets')
-            return res.status(500).json({error : 'error getting bracelets'})
+            console.log('error deleting bracelets',err)
+            return res.status(500).json({error : 'error deleting bracelets'})
     }
     res.json({results})
     })

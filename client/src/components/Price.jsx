@@ -1,77 +1,57 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
+import PriceDetails from './PriceDetails.jsx'
+import axios from 'axios'
 
 const Price = () => {
+const [data, setData] = useState([])
+const [modal, setModal] = useState(false)
+
+
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/bracelets')
+        .then(response => {
+          console.log(response.data)
+        setData(response.data);
+        })
+        .catch(error => {
+        console.error('Error fetching data:', error);
+        console.log('Axios error details:', error.response);
+        });
+    }, []);
+
+const handleDelete = async (id) => {
+  await axios.delete(`http://localhost:5000/api/bracelets/${id}`)
+        .then(response => {
+          setData(prevData => prevData.filter(item => item.id !== id))
+        })
+        .catch(error => {
+        console.error('Error fetching data:', error);
+        console.log('Axios error details:', error.response);
+        });
+}
+
+const handleUpdate = async (id) => {
+  setModal(true)
+}
+// await axios.put(`http://localhost:5000/api/bracelets/${id}`)
+  //       .then(response => {
+  //         console.log(response)
+  //         setData(prevData => prevData.map(item => item.id !== id))
+  //       })
+  //       .catch(error => {
+  //       console.error('Error fetching data:', error);
+  //       console.log('Axios error details:', error.response);
+  //       });
+
+
   return (
-    <section className="price_section layout_padding">
-    <div className="container">
-      <div className="heading_container">
-        <h2>
-          Our Jewellery Price
-        </h2>
-      </div>
-      <div className="price_container">
-        <div className="box">
-          <div className="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div className="img-box">
-            <img src="images/p-1.png" alt="" />
-          </div>
-          <div className="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div className="box">
-          <div className="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div className="img-box">
-            <img src="images/i-2.png" alt="" />
-          </div>
-          <div className="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div className="box">
-          <div className="name">
-            <h6>
-              Diamond Ring
-            </h6>
-          </div>
-          <div className="img-box">
-            <img src="images/i-3.png" alt="" />
-          </div>
-          <div className="detail-box">
-            <h5>
-              $<span>1000.00</span>
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="d-flex justify-content-center">
-        <a href="" className="price_btn">
-          See More
-        </a>
-      </div>
+    <div className='container-items'>
+      {data.map((element,key)=>(
+      <PriceDetails key={key} data={element} delete={handleDelete}
+      update={handleUpdate} modal={modal}/>
+      ))}
     </div>
-  </section>
   )
 }
 

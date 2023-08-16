@@ -3,7 +3,9 @@ const app = express();
 const port = 5000
 const bodyParser = require('body-parser')
 const db = require('./database/index.js');
+const cors = require('cors')
 
+app.use(cors())
 app.use(express())
 app.use(bodyParser.json())
 

@@ -3,9 +3,8 @@ import logo from '../assets/logo.png'
 import cart from '../assets/cart.png'
 import slider from '../assets/slider-img.png'
 
-
-
 const NavBar = () => {
+
   return (
     <div>
       <div className="hero_area">
@@ -106,7 +105,7 @@ const NavBar = () => {
                     Elevate Your Style with JEWELRY-STORE. Immerse yourself in a world of exquisite beauty and unparalleled craftsmanship. Explore our curated selection of stunning jewelry, each piece a testament to elegance and artistry. Redefine your allure with every shimmering detail.
                     </p>
                     <div>
-                      <a href="">Shop Now</a>
+                      <a href="" >Shop Now</a>
                     </div>
                   </div>
                 </div>
